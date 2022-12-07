@@ -2,7 +2,7 @@
 export default{
     data() {
         return {
-            // data e var
+            img : "https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
         }
     }
 }
@@ -12,7 +12,7 @@ export default{
 <template>
 
 <div class="jambotron">
-    <h1>TESTO CENTRALE</h1>
+    <img :src="img" alt="">
 </div>
 </template>
 
@@ -21,9 +21,6 @@ export default{
 .jambotron{
     width: 100%;
     height: 400px;
-    background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
